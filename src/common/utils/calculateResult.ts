@@ -1,4 +1,4 @@
-import type { Section } from "../types/section";
+import type { Section } from "../../types/section";
 
 export const calculateResult = (
   currentRotation: number,

@@ -4,6 +4,7 @@ import StartButton from "./SpinButton";
 import useSpinRoulette from "../common/hooks/useSpinRoulette";
 import { SectionsContext } from "../SectionsContext";
 import ResultModal from "./ResultModal";
+import { Box } from "@mui/material";
 
 const Roulette: React.FC = () => {
   const {
@@ -22,11 +23,20 @@ const Roulette: React.FC = () => {
         onClose={handleCloseResult}
         result={resultColor}
       />
-      <div style={{ position: "relative", width: "400px", height: "400px" }}>
+      <Box
+        sx={{
+          width: { xs: "320px", md: "400px", lg: "700px" },
+          position: "relative",
+        }}
+      >
         <svg
-          width="400"
-          height="400"
-          style={{ transform: `rotate(${rotation}deg)` }}
+          viewBox="0 0 400 400"
+          preserveAspectRatio="xMidYMid meet"
+          style={{
+            width: "100%",
+            height: "100%",
+            transform: `rotate(${rotation}deg)`,
+          }}
         >
           <circle cx="200" cy="200" r="200" fill="#ccc" />
           {sections.length > 1 && <>{renderSections(sections)}</>}
@@ -35,7 +45,7 @@ const Roulette: React.FC = () => {
         {sections.length > 1 && (
           <StartButton spinRoulette={spinRoulette} color={resultColor.color} />
         )}
-      </div>
+      </Box>
     </>
   );
 };

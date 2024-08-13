@@ -13,7 +13,12 @@ const Sections: React.FC = () => {
   };
 
   return (
-    <List>
+    <List
+      sx={{
+        height: { xs: "320px", md: "400px", lg: "700px" },
+        overflow: "auto",
+      }}
+    >
       {sections.map((section) => (
         <SectionsListItem
           section={section}

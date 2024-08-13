@@ -5,13 +5,17 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f7f8f9;
 }
 
 .content {
   margin: auto;
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
 }
 
 .spin-btn {
@@ -38,5 +42,5 @@ body {
 }
 
 .MuiInput-input {
-  padding: 0 !important; 
+  padding: 0 !important;
 }
