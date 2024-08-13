@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
-import { SectionsContext } from "../../SectionsContext";
-import { colors } from "../../common/data/colors";
+import { SectionsContext } from "../SectionsContext";
+import { colors } from "../common/data/colors";
 import { Box, Button, TextField } from "@mui/material";
 
 const CreateSectionForm: React.FC = () => {

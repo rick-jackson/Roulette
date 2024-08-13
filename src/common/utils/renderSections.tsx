@@ -1,4 +1,4 @@
-import { Section } from "../../types/section";
+import type { Section } from "../../types/section";
 
 export const renderSections = (sections: Section[]) => {
   const anglePerSection = 360 / sections.length;

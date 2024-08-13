@@ -1,7 +1,8 @@
 import { useState, useRef, useCallback, useContext } from "react";
+
+import type { Section } from "../../types/section";
 import { calculateResult } from "../utils/calculateResult";
 import { SectionsContext } from "../../SectionsContext";
-import { Section } from "../../types/section";
 
 const useSpinRoulette = () => {
   const { sections, isSpinning, toggleSpinnig } = useContext(SectionsContext);

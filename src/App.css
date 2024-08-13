@@ -34,8 +34,9 @@ body {
   width: 80px;
   height: 80px;
   border: none;
-  background-color: rgb(49, 138, 207);
+  background-color: #318acf;
   border: 8px solid #fff;
+  cursor: pointer;
 }
 
 .spin-btn:after {

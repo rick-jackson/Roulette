@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { SectionsContext } from "../../SectionsContext";
+import { SectionsContext } from "../SectionsContext";
 
 type SpinButtonProps = {
   spinRoulette: () => void;

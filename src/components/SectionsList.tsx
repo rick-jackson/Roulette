@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 
-import { SectionsContext } from "../../SectionsContext";
-import SectionsListItem from "../SectionsListItem";
+import { SectionsContext } from "../SectionsContext";
+import SectionsListItem from "./SectionsListItem";
 import { List } from "@mui/material";
 
 const Sections: React.FC = () => {

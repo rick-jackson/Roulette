@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
-import type { Section } from "../../types/section";
-import { SectionsContext } from "../../SectionsContext";
+import type { Section } from "../types/section";
+import { SectionsContext } from "../SectionsContext";
 import {
   Box,
   IconButton,
