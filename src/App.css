@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f7f8f9;
+}
+
+.content {
+  margin: auto;
+  display: flex;
+}
+
+.spin-btn {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  border: none;
+  background-color: rgb(49, 138, 207);
+  border: 8px solid #fff;
+}
+
+.spin-btn:after {
+  content: "";
+  position: absolute;
+  right: -28px;
+  top: 39%;
+  transform: rotate(90deg);
+  border: 16px solid transparent;
+  border-bottom-color: #fff;
+  border-top: none;
+}
+
+.MuiInput-input {
+  padding: 0 !important; 
+}
