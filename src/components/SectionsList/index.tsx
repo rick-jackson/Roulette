@@ -15,7 +15,7 @@ const Sections: React.FC = () => {
   return (
     <List
       sx={{
-        height: { xs: "320px", md: "400px", lg: "700px" },
+        height: { xs: "200px", md: "400px", lg: "700px" },
         overflow: "auto",
       }}
     >

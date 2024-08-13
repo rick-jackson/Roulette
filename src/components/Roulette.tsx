@@ -27,6 +27,7 @@ const Roulette: React.FC = () => {
         sx={{
           width: { xs: "320px", md: "400px", lg: "700px" },
           position: "relative",
+          height: "auto",
         }}
       >
         <svg
